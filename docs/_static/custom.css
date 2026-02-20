@@ -2,3 +2,16 @@
 .chapter-title {
   color: #0070c0; /* a clear, readable blue */
 }
+
+/* Hide the top breadcrumb bar (home icon + CHAPTER/... line) and "View page source" */
+.wy-breadcrumbs,
+.wy-breadcrumbs-aside,
+.rst-breadcrumbs,
+div[role="navigation"][aria-label="breadcrumbs navigation"] {
+  display: none !important;
+}
+
+/* Remove the extra spacing that remains after hiding breadcrumbs */
+.wy-nav-content {
+  padding-top: 20px !important;
+}
